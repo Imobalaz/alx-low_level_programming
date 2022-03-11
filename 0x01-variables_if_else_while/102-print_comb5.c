@@ -23,14 +23,17 @@ int main(void)
 				{
 					if (m != 48 || n != 48 || p != 48 || q != 48)
 					{
-						putchar(44);
+						if (m != 48 || n != 48 || p != 48 || q != 49)
+						{
+							putchar(44);
+							putchar(32);
+						}
+						putchar(m);
+						putchar(n);
 						putchar(32);
+						putchar(p);
+						putchar(q);
 					}
-					putchar(m);
-					putchar(n);
-					putchar(32);
-					putchar(p);
-					putchar(q);
 				}
 
 			}
