@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * times_table - main function
  *
  * Return: 0
@@ -25,6 +24,8 @@ void times_table(void)
 			c = a * b;
 			if (c > 9)
 				_putchar('0' + c / 10);
+			else if (c < 10 && b != 1)
+				_putchar(' ');
 			_putchar('0' + c % 10);
 
 			if (b != 9)
