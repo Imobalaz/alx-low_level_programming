@@ -3,15 +3,15 @@
 /**
  * _abs - main function
  *
- * @int : function variable
+ * @c : function variable
  *
  * Return: 0
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	if (int < 0)
-		return (int * (-1));
+	if (n < 0)
+		return (n * -1);
 	else
-		return (int);
+		return (n);
 }
