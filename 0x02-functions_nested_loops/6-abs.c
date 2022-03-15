@@ -3,7 +3,7 @@
 /**
  * _abs - main function
  *
- * @c : function variable
+ * @n : function variable
  *
  * Return: 0
  */
