@@ -3,6 +3,8 @@
 /**
  * _islower - main block
  *
+ * @c : character to check the case
+ *
  * Return: 0
  *
  */
