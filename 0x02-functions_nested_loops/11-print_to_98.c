@@ -26,37 +26,16 @@ void print_to_98(int n)
 			}
 			else
 				m = i;
-			if (m > 99)
-			{
-				_putchar('0' + m / 100);
-				m = m % 100;
-				if (m < 10)
-					_putchar('0');
-			}
-			if (m > 9)
-				_putchar('0'+ m / 10);
-			_putchar('0' + m % 10);
+			printf("%i", m);
 			if (i != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+				printf(", ");
 		}
 	}
 	else
 	{
 		for (; i >= 98; i--)
 		{
-			int m;
-
-			m = i;
-			if (m > 99)
-			{
-				_putchar('0' + m / 100);
-				m = m % 100;
-			}
-			_putchar('0' + m / 10);
-			_putchar('0' + m % 10);
+			printf("%i", i);
 			if (i != 98)
 			{
 				_putchar(',');
