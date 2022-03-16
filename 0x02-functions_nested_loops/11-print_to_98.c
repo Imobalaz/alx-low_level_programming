@@ -36,7 +36,6 @@ void print_to_98(int n)
 			if (m > 9)
 				_putchar('0'+ m / 10);
 			_putchar('0' + m % 10);
-
 			if (i != 98)
 			{
 				_putchar(',');
@@ -49,7 +48,7 @@ void print_to_98(int n)
 		for (; i >= 98; i--)
 		{
 			int m;
-			
+
 			m = i;
 			if (m > 99)
 			{
