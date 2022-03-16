@@ -10,32 +10,32 @@
 
 int main(void)
 {
-    int fibonacci[50];
-
-    fibonacci[0] = 1;
-    fibonacci[1] = 2;
-
     int i;
+    long long j;
+    long long k;
 
-    for (i = 2; i < 50; i++)
+    i = 0; 
+    j = 1;
+    k = 2;
+
+    while (i < 50)
     {
-        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-    }
-
-     int j;
-
-    for (j = 0; j < 50; j++)
-    {
-        printf("%i", fibonacci[j]);
-
-        if (j != 49)
+        if (i == 0)
+            printf("%lli", j);
+        else if (i == 1)
+            printf("%lli", k);
+        else 
         {
-            printf(", ");
+            k += j;
+            j = k - j;
+            printf("%lli", k);
         }
-    }
-    
-    printf("\n");
-    return (0);
 
+        if (i != 49)
+            printf(", ");
+        i++;
+    }
+
+    printf("\n");
     
 }
