@@ -30,6 +30,8 @@ void print_to_98(int n)
 			{
 				_putchar('0' + m / 100);
 				m = m % 100;
+				if (m < 10)
+					_putchar('0');
 			}
 			if (m > 9)
 				_putchar('0'+ m / 10);
@@ -54,8 +56,7 @@ void print_to_98(int n)
 				_putchar('0' + m / 100);
 				m = m % 100;
 			}
-			if (m > 9)
-				_putchar('0'+ m / 10);
+			_putchar('0' + m / 10);
 			_putchar('0' + m % 10);
 			if (i != 98)
 			{
