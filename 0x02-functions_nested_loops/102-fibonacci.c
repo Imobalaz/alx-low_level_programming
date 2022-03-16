@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    long long fibonacci[50];
+    int fibonacci[50];
 
     fibonacci[0] = 1;
     fibonacci[1] = 2;
@@ -26,7 +26,7 @@ int main(void)
 
     for (j = 0; j < 50; j++)
     {
-        printf("%lli", fibonacci[j]);
+        printf("%i", fibonacci[j]);
 
         if (j != 49)
         {
@@ -35,6 +35,7 @@ int main(void)
     }
     
     printf("\n");
+    return (0);
 
     
 }
