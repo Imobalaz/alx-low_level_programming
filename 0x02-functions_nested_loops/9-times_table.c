@@ -4,7 +4,6 @@
  * times_table - main function
  *
  * Return: 0
- *
  */
 
 void times_table(void)
@@ -24,7 +23,7 @@ void times_table(void)
 			c = a * b;
 			if (c > 9)
 				_putchar('0' + c / 10);
-			else if (c < 10 && b != 1)
+			else if (c < 10 && b != 0)
 				_putchar(' ');
 			_putchar('0' + c % 10);
 
