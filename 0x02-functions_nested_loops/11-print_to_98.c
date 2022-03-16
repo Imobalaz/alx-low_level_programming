@@ -15,7 +15,7 @@ void print_to_98(int n)
 	i = n;
 	if (i <= 98)
 	{
-		for (i; i <= 98; i++)
+		for (; i <= 98; i++)
 		{
 			int m;
 
@@ -44,7 +44,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (i; i >= 98; i--)
+		for (; i >= 98; i--)
 		{
 			int m;
 			
