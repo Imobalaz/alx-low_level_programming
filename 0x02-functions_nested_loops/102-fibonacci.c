@@ -13,8 +13,8 @@ int main(void)
 	int i;
 	long j;
 	long k;
-	
-	i = 0; 
+
+	i = 0;
 	j = 1;
 	k = 2;
 
@@ -30,7 +30,7 @@ int main(void)
 			j = k - j;
 			printf("%li", k);
 		}
-		
+
 		if (i != 49)
 			printf(", ");
 		i++;
