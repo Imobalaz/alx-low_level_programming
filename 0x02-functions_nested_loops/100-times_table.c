@@ -23,15 +23,19 @@ void print_times_table(int n)
 		{
 			k = i * j;
 
-			if (k < 10 && j != 0)
+			if (k < 10)
 			{
-				_putchar(' ');
-				_putchar(' ');
+				if (j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar('0' + k);
 			}
-			else if (k > 9 && k < 100 && j != 0)
+			else if (k > 9 && k < 100)
 			{
-				_putchar(' ');
+				if(j != 0)
+					_putchar(' ');
 				_putchar('0' + k / 10);
 				_putchar('0' + k % 10);
 			}
