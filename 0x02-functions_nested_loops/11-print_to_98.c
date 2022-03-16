@@ -13,7 +13,7 @@ void print_to_98(int n)
 	int i;
 
 	i = n;
-	for (i; i <= 98; i++)
+	for (; i <= 98; i++)
 	{
 		int m;
 
