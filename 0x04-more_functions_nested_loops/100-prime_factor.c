@@ -18,10 +18,7 @@ long largest_prime_factor(long n);
 
 int main(void)
 {
-	long largest_prime;
-
-	largest_prime = largest_prime_factor(612852475143);
-	printf("%li\n", largest_prime);
+	largest_prime_factor(612852475143);
 	return (0);
 }
 
@@ -43,5 +40,6 @@ long largest_prime_factor(long n)
 	if (largest < n)
 		largest_prime_factor(largest);
 	else
-		return (largest);
+		printf("%li\n", largest);
+	return (0);
 }
