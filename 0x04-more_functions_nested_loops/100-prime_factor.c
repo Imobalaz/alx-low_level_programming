@@ -1,16 +1,27 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 long largest_prime_factor(long n);
-bool is_prime(long i);
+
 /**
  * main - main block
  * Return: 0
  */
 
+/**
+ * largest_prime_factor - function to return the largest prime factor
+ * of a number
+ *
+ * @n : the number whose largest prime factor we want
+ *
+ * Return: the largest prime factor
+ */
+
 int main(void)
 {
-	largest_prime_factor(612852475143);
+	long largest_prime;
+
+	largest_prime = largest_prime_factor(612852475143);
+	printf("%li\n", largest_prime);
 	return (0);
 }
 
@@ -21,28 +32,16 @@ long largest_prime_factor(long n)
 
 	for (i = 2; i < n; i++)
 	{
-		if (n % i == 0 && is_prime(i))
+		if (n % i == 0)
 		{
-			largest = i;
+			largest = n / i;
+			break;
 		}
-	}
-	
-	if (largest == 0)
 		largest = n;
-	printf("%li", largest);
-	return (largest);
-}
-
-bool is_prime(long i)
-{
-	long j;
-
-	for(j = 2; j < i; j++)
-	{
-		if (i % j == 0)
-			return (false);
 	}
-	
-	return (true);
-}
 
+	if (largest < n)
+		largest_prime_factor(largest);
+	else
+		return (largest);
+}
