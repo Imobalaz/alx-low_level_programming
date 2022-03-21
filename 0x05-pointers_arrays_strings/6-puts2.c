@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _puts - function to print string
+ * puts2 - function to print string
  *
  * @str : string to be printed
  *
  * Return: void
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i;
 
