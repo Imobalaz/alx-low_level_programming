@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap_int: Function to swap two ints
+ * swap_int - Function to swap two ints
  *
  * @a : the first int
  *
