@@ -9,34 +9,29 @@
  *
  * Return: the pointer to the substring
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-	int tester;
+	int a = 0, b = 0;
 
-	i = 0;
-	tester = 0;
-	while (haystack[i])
+	while (haystack[a])
 	{
-		if (haystack[i] == needle[0])
+		while (needle[b])
 		{
-			tester = 1;
-			j = 0;
-			while (needle[j])
+			if (haystack[a + b] != needle[b])
 			{
-				if (haystack[i + j] == needle[j])
-					tester *= 1;
-				else
-					tester *= 0;
-				j++;
+				break;
 			}
 
+			b++;
 		}
-		if (tester)
-			return (haystack + i);
-		i++;
+
+		if (needle[b] == '\0')
+		{
+			return (haystack + a);
+		}
+
+		a++;
 	}
 
-	return (0);
+	return ('\0');
 }
