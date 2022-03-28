@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_string - function to set string 
+ * set_string - function to set string
  *
  * @s : pointer to a sting
  *
