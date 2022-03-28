@@ -5,7 +5,7 @@
  *
  * @s : pointer to a sting
  *
- * @a : the string we are to use
+ * @to : the string we are to use
  *
  * Return: void
  */
