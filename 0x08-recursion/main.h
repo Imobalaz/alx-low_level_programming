@@ -8,3 +8,7 @@ int _sqrt_recursion(int n);
 int get_sqrt(int n, int m);
 int is_prime_number(int n);
 int check_prime(int n, int m);
+int is_palindrome(char *s);
+int _strlen_recursion(char *s);
+int comparator(char *s, int n1, int n2);
+int wldcmp(char *s1, char *s2);
