@@ -3,6 +3,10 @@
 /**
  * main - program that prints its name
  *
+ * @argc : number of arguments passed
+ *
+ * @argv : array of arguments
+ *
  * Return: 0
  */
 
@@ -17,7 +21,6 @@ int main(int argc, char *argv[])
 	{
 		_putchar(name[i]);
 		i++;
-	
 	}
 	_putchar('\n');
 	return (0);
