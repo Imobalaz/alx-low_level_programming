@@ -24,7 +24,7 @@ int digit_checker(char *num)
 		i++;
 	}
 
-	return(1);
+	return (1);
 
 }
 /**
