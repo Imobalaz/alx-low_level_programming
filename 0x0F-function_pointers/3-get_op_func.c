@@ -1,14 +1,13 @@
 #include "3-calc.h"
+#include <stdlib.h>
 #include <string.h>
 
 /**
- * get_op_func - function that points to an op_function
- *
- * @s : the sign
- *
- * Return: 0
- */
-
+  * get_op_func - ...
+  * @s: ...
+  *
+  * Return: ...
+  */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
