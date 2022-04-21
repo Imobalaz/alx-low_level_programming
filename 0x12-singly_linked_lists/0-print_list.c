@@ -1,51 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * print_list - function that prints all the elements in a list
- *
- * @h : pointer to the list
- *
- * Return: number of nodes
- */
-
+  * print_list - Prints all elements of a list
+  * @h: A linked list
+  *
+  * Return: The number of nodes
+  */
 size_t print_list(const list_t *h)
 {
-	size_t i;
+	size_t count = 0;
 
-	i = 0;
-	return (recursion_for_print_list(h, &i));
-}
-
-/**
- * recursion_for_print_list - prints content of lists recursively
- *
- * @h : the head of the list
- *
- * @i : for counting
- *
- * Return: number of nodes
- */
-
-size_t recursion_for_print_list(const list_t *h, size_t *i)
-{
-	char *string;
-	unsigned int length;
-
-	if (h == NULL)
-		return (*i);
-
-	string = h->str;
-	length = h->len;
-
-	if (!string)
+	while (h != NULL)
 	{
-		string = "(nil)";
-		length = 0;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		h = h->next;
+		count++;
 	}
 
-	printf("[%i] %s\n", length, string);
-	*i += 1;
-	recursion_for_print_list(h->next, i);
-
-	return (*i);
+	return (count);
 }
