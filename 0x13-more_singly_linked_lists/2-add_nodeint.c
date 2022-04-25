@@ -5,7 +5,7 @@
  *
  * @head : pointer to the pointer to the list
  *
- * @n : the integer to be added 
+ * @n : data
  *
  * Return: pointer to the added node
  */
@@ -27,5 +27,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	*head = temp;
 
-	return (temp);	
+	return (temp);
 }
